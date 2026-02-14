@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>महाशिवरात्रि | हर हर महादेव</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Tiro+Devanagari+Hindi:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+background:#000;
+font-family:'Tiro Devanagari Hindi', serif;
+overflow:hidden;
+color:white;
+}
+
+/* BOOK */
+.book{
+position:relative;
+width:100%;
+height:100vh;
+perspective:2500px;
+overflow:hidden;
+}
+
+/* PAGE */
+.page{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(145deg,#0d0d0d,#1a1a1a);
+padding:25px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+transform-origin:left;
+transition:transform 1s ease;
+backface-visibility:hidden;
+overflow-y:auto;
+}
+
+.page h1{
+font-family:'Cinzel', serif;
+color:#ffae00;
+margin-bottom:15px;
+font-size:24px;
+text-shadow:0 0 15px #ffae00;
+}
+
+.page p{
+font-size:15px;
+line-height:1.9;
+margin-bottom:15px;
+max-width:95%;
+}
+
+.page img{
+width:85%;
+max-width:350px;
+border-radius:12px;
+margin:15px 0;
+box-shadow:0 0 25px rgba(255,174,0,0.6);
+}
+
+/* FLIP */
+.page.flipped{
+transform:rotateY(-180deg);
+}
+
+/* PETALS */
+.petal{
+position:fixed;
+top:-50px;
+font-size:20px;
+animation:fall linear infinite;
+opacity:0.9;
+pointer-events:none;
+z-index:999;
+}
+@keyframes fall{
+to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* FINAL PAGE TRISHUL */
+.final-page{
+background:#000;
+position:relative;
+justify-content:center;
+}
+
+.trishul{
+position:absolute;
+font-size:300px;
+color:#ffae00;
+opacity:0.15;
+animation:fireGlow 2s infinite alternate;
+}
+
+@keyframes fireGlow{
+from{
+text-shadow:0 0 30px #ffae00,0 0 60px #ff4500;
+}
+to{
+text-shadow:0 0 80px #ff0000,0 0 120px orange;
+}
+}
+
+.fire{
+position:absolute;
+width:100%;
+height:100%;
+background:radial-gradient(circle at center,rgba(255,100,0,0.3),transparent 70%);
+animation:fireMove 3s infinite alternate;
+}
+
+@keyframes fireMove{
+from{opacity:0.5;}
+to{opacity:1;}
+}
+
+.mantra{
+position:relative;
+font-size:22px;
+color:#ffae00;
+text-shadow:0 0 20px #ffae00,0 0 40px #ff4500;
+z-index:2;
+}
+</style>
+</head>
+<body>
+
+<div class="book">
+
+<!-- PAGE 1 -->
+<div class="page">
+<h1>महाशिवरात्रि की दिव्य रात्रि</h1>
+<p>
+महाशिवरात्रि वह पवित्र रात्रि है जब समस्त ब्रह्मांड में शिव तत्व की ऊर्जा विशेष रूप से सक्रिय हो जाती है। यह केवल एक पर्व नहीं बल्कि आत्मा के जागरण का अवसर है। इस रात भक्त उपवास रखते हैं, रात्रि जागरण करते हैं, और गहन ध्यान में लीन होकर भगवान शिव के नाम का स्मरण करते हैं। शिव केवल संहारक नहीं बल्कि पुनर्निर्माण के भी देवता हैं। उनका स्मरण हमें अहंकार से मुक्त कर शांति, स्थिरता और आत्मबल प्रदान करता है।
+</p>
+<img src="/mnt/data/c57bcf70e13e87b55ee88317a7f10ed4.jpg">
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+<h1>शिवलिंग का आध्यात्मिक रहस्य</h1>
+<p>
+शिवलिंग सृष्टि की अनंत ऊर्जा का प्रतीक है। यह आकार निराकार ब्रह्म का प्रतिनिधित्व करता है। जब जल, बेलपत्र और पुष्प अर्पित किए जाते हैं, तब भक्त अपनी श्रद्धा और समर्पण को व्यक्त करते हैं। शिवलिंग हमें सिखाता है कि ईश्वर किसी सीमित रूप में बंधा नहीं है, वह हर कण में व्याप्त है।
+</p>
+<img src="/mnt/data/b1f0bd0d0d8be92f6e7ea1b665c10f71.jpg">
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+<h1>नीलकंठ महादेव</h1>
+<p>
+समुद्र मंथन के समय जब विष निकला तो देव और दानव भयभीत हो गए। तब भगवान शिव ने उस विष को अपने कंठ में धारण कर संसार की रक्षा की। उनका कंठ नीला पड़ गया और वे नीलकंठ कहलाए। यह त्याग हमें सिखाता है कि सच्ची शक्ति सेवा और बलिदान में निहित है।
+</p>
+<img src="/mnt/data/3040f81c3a8394492f6b1eec14bc14f8.jpg">
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+<h1>आदि योगी</h1>
+<p>
+भगवान शिव को प्रथम योगी कहा जाता है। उन्होंने सप्त ऋषियों को योग और ध्यान का ज्ञान प्रदान किया। उनका ध्यान स्थिरता, संतुलन और आत्मज्ञान का मार्ग है।
+</p>
+<img src="/mnt/data/c528b6f7926fc39fd65c1a92521dbd48.jpg">
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+<h1>कैलाशपति</h1>
+<p>
+कैलाश पर्वत शिव का निवास स्थान है। बर्फ से ढका हुआ यह पर्वत वैराग्य और पवित्रता का प्रतीक है।
+</p>
+<img src="/mnt/data/45444fdb1ba318994b7104bca4721749.jpg">
+</div>
+
+<!-- PAGE 6 -->
+<div class="page">
+<h1>महादेव का तांडव</h1>
+<p>
+तांडव नृत्य सृष्टि, स्थिति और संहार का प्रतीक है। शिव का तांडव ब्रह्मांडीय ऊर्जा का प्रकट रूप है।
+</p>
+<img src="/mnt/data/b30cfc0c385c16dea433c5fc9f4c52de.jpg">
+</div>
+
+<!-- PAGE 7 -->
+<div class="page">
+<h1>शिव की ध्यान अवस्था</h1>
+<p>
+जब शिव ध्यान में लीन होते हैं तब समस्त ब्रह्मांड शांत हो जाता है। उनका ध्यान हमें भीतर की शांति खोजने की प्रेरणा देता है।
+</p>
+<img src="/mnt/data/3d0293d2ffc8d516f76fe8abd3b67a62.jpg">
+</div>
+
+<!-- PAGE 8 FINAL -->
+<div class="page final-page">
+<div class="fire"></div>
+<div class="trishul">🔱</div>
+<p class="mantra">। नमः पार्वती पतय हर हर महादेव ।</p>
+</div>
+
+</div>
+
+<script>
+const pages = document.querySelectorAll(".page");
+let current = 0;
+
+pages.forEach((page,index)=>{
+page.style.zIndex = pages.length - index;
+});
+
+function nextPage(){
+if(current < pages.length){
+pages[current].classList.add("flipped");
+current++;
+}
+}
+function prevPage(){
+if(current > 0){
+current--;
+pages[current].classList.remove("flipped");
+}
+}
+
+let startX=0;
+document.addEventListener("touchstart",e=>{startX=e.touches[0].clientX;});
+document.addEventListener("touchend",e=>{
+let endX=e.changedTouches[0].clientX;
+if(startX-endX>50) nextPage();
+if(endX-startX>50) prevPage();
+});
+
+/* PETALS */
+function createPetal(){
+const petal=document.createElement("div");
+petal.classList.add("petal");
+petal.innerHTML=Math.random()>0.5?"🌸":"🌺";
+petal.style.left=Math.random()*100+"vw";
+petal.style.animationDuration=(4+Math.random()*4)+"s";
+document.body.appendChild(petal);
+setTimeout(()=>petal.remove(),8000);
+}
+setInterval(createPetal,250);
+</script>
+
+</body>
+</html>
